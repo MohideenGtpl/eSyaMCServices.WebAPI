@@ -1,0 +1,9 @@
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.DO\eSyaMCServices.DO\bin\Debug\netcoreapp2.2\eSyaMCServices.DO.deps.json
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.DO\eSyaMCServices.DO\bin\Debug\netcoreapp2.2\eSyaMCServices.DO.dll
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.DO\eSyaMCServices.DO\bin\Debug\netcoreapp2.2\eSyaMCServices.DO.pdb
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.DO\eSyaMCServices.DO\obj\Debug\netcoreapp2.2\eSyaMCServices.DO.csproj.CoreCompileInputs.cache
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.DO\eSyaMCServices.DO\obj\Debug\netcoreapp2.2\eSyaMCServices.DO.AssemblyInfoInputs.cache
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.DO\eSyaMCServices.DO\obj\Debug\netcoreapp2.2\eSyaMCServices.DO.AssemblyInfo.cs
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.DO\eSyaMCServices.DO\obj\Debug\netcoreapp2.2\eSyaMCServices.DO.dll
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.DO\eSyaMCServices.DO\obj\Debug\netcoreapp2.2\eSyaMCServices.DO.pdb
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.DO\eSyaMCServices.DO\obj\Debug\netcoreapp2.2\eSyaMCServices.DO.csprojAssemblyReference.cache

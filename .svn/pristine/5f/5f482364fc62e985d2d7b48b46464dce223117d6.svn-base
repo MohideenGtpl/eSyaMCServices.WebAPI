@@ -1,0 +1,11 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace eSyaMCServices.IF
+{
+   public interface IMCServiceRepository
+    {
+
+    }
+}

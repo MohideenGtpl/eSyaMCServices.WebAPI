@@ -1,0 +1,79 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using eSyaMCServices.DL.Entities;
+using eSyaMCServices.IF;
+using eSyaMCServices.DO;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
+
+namespace eSyaMCServices.DL.Repository
+{
+   public class SpecialtyUnitsRepository : ISpecialtyUnitsRepository
+    {
+        public List<DO_SpecialtUnits> GetSpecialtyUnitsbyBusinessKey(int Businesskey)
+        {
+            try
+            {
+
+                List<DO_SpecialtUnits> Spunits_list = new List<DO_SpecialtUnits>();
+
+                using (var db = new eSyaEnterprise())
+                {
+
+                    var sp_units = db.GtEsspbl.Where(c => c.BusinessKey== Businesskey).Join(db.GtEsspcd,
+                          x => x.SpecialtyId,
+                          y => y.SpecialtyId,
+                         (x, y) => new DO_SpecialtUnits
+
+                         {
+                             SpecialtyId = x.SpecialtyId,
+                             SpecialtyDesc = y.SpecialtyDesc
+                         }).ToList();
+
+                    foreach (var sp in sp_units)
+                    {
+                        DO_SpecialtUnits objsp;
+                        var obj = db.GtEsspmc.Where(x => x.SpecialtyId== sp.SpecialtyId&& x.BusinessKey == Businesskey).OrderByDescending(x => x.EffectiveFrom).FirstOrDefault();
+                        if (obj != null)
+                        {
+                            objsp = new DO_SpecialtUnits()
+                            {
+                                BusinessKey = obj.BusinessKey,
+                                SpecialtyId = obj.SpecialtyId,
+                                EffectiveFrom = sp.EffectiveFrom,
+                                NoOfUnits = obj.NoOfUnits,
+                                NewPatient = obj.NewPatient,
+                                RepeatPatient = obj.RepeatPatient,
+                                NoOfMaleBeds = obj.NoOfMaleBeds,
+                                NoOfFemaleBeds = obj.NoOfFemaleBeds,
+                                NoOfCommonBeds = obj.NoOfCommonBeds,
+                                MaxStayAllowed=obj.MaxStayAllowed,
+                                ActiveStatus = obj.ActiveStatus,
+                            };
+                        }
+                        else
+                        {
+                            objsp = new DO_SpecialtUnits()
+                            {
+                                BusinessKey = 0,
+                                SpecialtyId = sp.SpecialtyId,
+                                SpecialtyDesc = sp.SpecialtyDesc,
+                                EffectiveFrom = DateTime.Now,
+                                ActiveStatus = true
+                            };
+                        }
+                        Spunits_list.Add(objsp);
+                    }
+                }
+                var Distinctspecialties = Spunits_list.GroupBy(x => x.SpecialtyId).Select(y => y.First());
+                return Distinctspecialties.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+    }
+}

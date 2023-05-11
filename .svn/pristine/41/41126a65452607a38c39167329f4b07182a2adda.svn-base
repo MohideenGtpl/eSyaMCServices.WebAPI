@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using eSyaMCServices.DO;
+using eSyaMCServices.IF;
+using eSyaMCServices.DL.Entities;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
+using System.Linq;
+
+namespace eSyaMCServices.DL.Repository
+{
+   public class CommonDataRepository: ICommonDataRepository
+    {
+        public async Task<List<DO_BusinessLocation>> GetBusinessKey()
+        {
+            try
+            {
+                using (var db = new eSyaEnterprise())
+                {
+                    var bk = db.GtEcbsln
+                        .Where(w => w.ActiveStatus)
+                        .AsNoTracking()
+                        .Select(b => new DO_BusinessLocation
+                        {
+                            BusinessKey = b.BusinessKey,
+                            //LocationDescription =b.LocationDescription
+                           LocationDescription = b.BusinessName
+                        }).ToListAsync();
+
+                    return await bk;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+    }
+}

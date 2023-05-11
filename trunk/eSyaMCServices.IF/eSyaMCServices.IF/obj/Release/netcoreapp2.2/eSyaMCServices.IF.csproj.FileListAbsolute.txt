@@ -1,0 +1,12 @@
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\bin\Release\netcoreapp2.2\eSyaMCServices.IF.deps.json
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\bin\Release\netcoreapp2.2\eSyaMCServices.IF.dll
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\bin\Release\netcoreapp2.2\eSyaMCServices.IF.pdb
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\bin\Release\netcoreapp2.2\eSyaMCServices.DO.dll
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\bin\Release\netcoreapp2.2\eSyaMCServices.DO.pdb
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\obj\Release\netcoreapp2.2\eSyaMCServices.IF.csprojAssemblyReference.cache
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\obj\Release\netcoreapp2.2\eSyaMCServices.IF.csproj.CoreCompileInputs.cache
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\obj\Release\netcoreapp2.2\eSyaMCServices.IF.AssemblyInfoInputs.cache
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\obj\Release\netcoreapp2.2\eSyaMCServices.IF.AssemblyInfo.cs
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\obj\Release\netcoreapp2.2\eSyaMCServices.IF.csproj.CopyComplete
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\obj\Release\netcoreapp2.2\eSyaMCServices.IF.dll
+D:\eSya Project\Solution\Project_eSyaWebAPI\eSyaMCServices.WebAPI\trunk\eSyaMCServices.IF\eSyaMCServices.IF\obj\Release\netcoreapp2.2\eSyaMCServices.IF.pdb
